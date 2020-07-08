@@ -40,6 +40,7 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/articles/:id' do 
+<<<<<<< HEAD
     @article = Article.find_by(id: params[:id])
     
     @article.update(title: params[:title], content: params[:content])
@@ -53,6 +54,9 @@ class ApplicationController < Sinatra::Base
     @article.destroy 
     
     redirect to('/articles')
+=======
+    
+>>>>>>> 31c6c2e5115675e104384860631ca0341f4fb958
   end
   
   
